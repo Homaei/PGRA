@@ -1,0 +1,25 @@
+dataset: batadal
+n_clients: 9
+n_rounds: 20
+local_epochs: 2
+eta: 1.0
+byzantine_ratio: 0.222
+warmup_epochs: 20
+warmup_lr: 0.005
+backdoor_epochs: 15
+lr: 0.001
+epsilon_s: 4.0
+boost_factor: 1.0
+noise_scale: 1.8
+model:
+  hidden_dim: 64
+  latent_dim: 32
+physics:
+  lambda1: 0.0
+  lambda2: 1.0
+  epsilon_p: 0.05
+pgra:
+  alpha: 20.0
+  gamma: 0.005
+seeds: [42, 123, 456]
+D_val_size: 50

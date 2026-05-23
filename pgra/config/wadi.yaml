@@ -1,0 +1,25 @@
+dataset: wadi
+n_clients: 10
+n_rounds: 20
+local_epochs: 1
+eta: 1.0
+byzantine_ratio: 0.3
+warmup_epochs: 20
+warmup_lr: 0.005
+backdoor_epochs: 30
+lr: 0.001
+epsilon_s: 10.0
+boost_factor: 1.0
+noise_scale: 2.5
+model:
+  hidden_dim: 32
+  latent_dim: 16
+physics:
+  lambda1: 0.0
+  lambda2: 1.0
+  epsilon_p: 0.05
+pgra:
+  alpha: 5.0
+  gamma: 0.005
+D_val_size: 50
+seeds: [42, 123, 456]
